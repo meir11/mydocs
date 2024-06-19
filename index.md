@@ -22,4 +22,25 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
+<script setup lng="ts">
+  import { withBase} from 'vitepress'
+import BlogCard from './components/BlogCard.vue';
+import { data as posts } from './blog.data.ts'
+</script>
+
+## the last posts..
+<div class="posts">
+<BlogCard v-for="p in posts" :title="p.frontmatter.title" :url="withBase(p.url)"/>
+</div>
+
+<style>
+  .posts{
+   display: flex;
+   gap: 20px
+  }
+</style>
+
+
+
+
 
