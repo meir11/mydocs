@@ -10,10 +10,9 @@ const props = defineProps<blog>()
 <template>
   <a :href="`${url}`">
     <div class="poos-card">
-    <!-- placeholder 200x100 /  -->
-     <img src="https://via.placeholder.com/200" alt="">
+      <img src="https://via.placeholder.com/200" alt="">
       <div>{{ title }}</div>
-      <div>{{ url }}</div>
+      <div>{{ description }}</div>
     </div>
   </a>
 
@@ -31,9 +30,15 @@ const props = defineProps<blog>()
   transition: box-shadow 0.3s ease;
 }
 
+.dark .poos-card {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
 .poos-card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 </style>
 
 <style scoped></style>
