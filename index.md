@@ -5,7 +5,7 @@ layout: home
 hero:
   name: 'מאיר לוי'
   text: 'הבלוג של מאיר לוי'
-  tagline: כאן אשתף פוסטים מעניינים בנושאי תכנות
+  tagline: 'פוסטים טיפים ועוד בנושאי תכנות'
   # actions:
   #   - theme: brand
   #     text: Markdown Examples
