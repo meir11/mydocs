@@ -146,3 +146,36 @@ class Admin extends Animal {
 ```
 
 `super` מציין שזה פרפטר שהוגדר באב
+
+### instanceof 
+
+באמצעות `instanceof` ניתן לבדוק האם האובייקט שייך לקלאס מסויים 
+
+```js
+class User {
+  constructor(name) {
+    this.name = name
+  }
+}
+const user = new User('John')
+console.log(user instanceof User) // true
+
+class Admin extends User {}
+const admin = new Admin('bob')
+console.log(admin instanceof User) // true
+console.log(admin instanceof Admin) // true
+```
+ניתן לבדוק את זה גם על קלאסים מובנים בjavaScript
+
+```js
+const arr = [1, 2, 3]
+console.log(arr instanceof Array) // true
+console.log(arr instanceof Object) // true
+console.log(arr instanceof String) // false
+
+const file = new File()
+console.log(file instanceof File) // true
+console.log(file instanceof Object) // true
+```
+
+

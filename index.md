@@ -31,7 +31,7 @@ import { data as posts } from './blog.data.ts'
 ### הפוסטים האחרונים שלי..
 
 <div class="posts">
-<BlogCard v-for="p in posts" :title="p.frontmatter.title" :url="withBase(p.url)"/>
+ <BlogCard v-for="p in posts" :title="p.frontmatter.title" :url="withBase(p.url)"/>
 </div>
 
 <style>
